@@ -1,5 +1,6 @@
 # Team 05 Senior Project README
 This repository contains Team 05's UNR Senior Project, the project will be updated throughout the semester. 
+
 NOTE: This project uses the Intuit QBOConceptsTutorial project as a reference. The project can be found in
 the following link https://github.com/IntuitDeveloper/QBOConceptsTutorial-Java/blob/master/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java
 
