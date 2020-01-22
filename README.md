@@ -34,8 +34,8 @@ The project notes will be updated as changes are made to the project.
 
 * **Future Modifications:**
     - Graph display development
-    - editing tools for graph modifications
-    - implementation of machine learning algorithms to make predictions
+    - Editing tools for graph modifications
+    - Implementation of machine learning algorithms to make predictions
     - UI changes 
 
 
