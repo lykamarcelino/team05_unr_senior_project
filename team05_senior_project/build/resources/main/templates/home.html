@@ -2,12 +2,12 @@
 <head>
   <title>CWAC</title>
   <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{css/style.css}"/>
+
 </head>
 <body>
   <h3>Welcome to Cloudy With a Chance Sales Forecasting!!!</h3>
   <br /><br /><br />
 
- 
   <!-- Connect To QuickBooks Button -->
   <b>Login With QuickBooks</b><br />
   <a class="imgLink" th:onclick="'launchPopup(\'connectToQuickbooks\');'" href="#">
@@ -19,8 +19,6 @@
   </a>
   <br /><br /><br />
 
-
-  
   <script>
   function launchPopup(path) {
     var win;

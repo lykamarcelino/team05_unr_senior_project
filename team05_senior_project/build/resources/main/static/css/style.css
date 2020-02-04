@@ -1,8 +1,8 @@
 body {
   font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-serif;
+  background: whitesmoke;
+  text-align: center;
 }
-
-
 
 .imgLink {
   text-decoration: none;
@@ -12,4 +12,29 @@ body {
 
 #result {
   white-space: pre-wrap;
+}
+
+.block_one {
+  width: 220px;
+  background: #888;
+  color: white;
+}
+
+h3{
+  display: block;
+  min-height: 80px;
+  line-height: 80px;
+  background: #fdfdfd;
+  font: bold 1.6rem/114%;
+  color: black;
+  margin-align: center;
+  text-align: center;
+}
+
+button {
+  display: block;
+  height: 35px;
+  width: 200px;
+  color: #5b5d5b;
+  background: #f6f6f6;
 }
