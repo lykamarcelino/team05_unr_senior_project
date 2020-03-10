@@ -2,26 +2,33 @@
 <head>
   <title>CWAC</title>
   <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{css/style.css}"/>
+
 </head>
 <body>
-  <h3>Welcome to Cloudy With a Chance Sales Forecasting!!!</h3>
-  <br /><br /><br />
+<h3>Sales Forecasting
+  <img
+          style="height: 40px;width: 40px;"
+          src="../static/images/Cloud_Logo.png"
+          th:src="@{/images/Cloud_Logo.png}"
+  />
+</h3>
 
- 
+<br /><br /><br />
+
+<roundedBlock>
   <!-- Connect To QuickBooks Button -->
-  <b>Login With QuickBooks</b><br />
+  <br /> <br /> <br /> <br /> <br /><br /><br />
+  <b>Sign in with QuickBooks </b><br /><br />
   <a class="imgLink" th:onclick="'launchPopup(\'connectToQuickbooks\');'" href="#">
     <img
-      style="height: 40px"
-      src="../static/images/C2QB_white_btn_lg_default.png"
-      th:src="@{/images/C2QB_white_btn_lg_default.png}"
+            style="height: 40px"
+            src="../static/images/C2QB_white_btn_lg_default.png"
+            th:src="@{/images/C2QB_white_btn_lg_default.png}"
     />
   </a>
-  <br /><br /><br />
+</roundedBlock>
 
-
-  
-  <script>
+<script>
   function launchPopup(path) {
     var win;
     var checkConnect;

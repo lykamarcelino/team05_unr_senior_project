@@ -2,6 +2,9 @@ package com.intuit.developer.tutorials.controller;
 
 import javax.servlet.http.HttpSession;
 
+import com.intuit.developer.tutorials.helper.recordsHelper;
+import com.intuit.ipp.data.*;
+import com.intuit.ipp.services.DataService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -14,9 +17,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;
-import com.intuit.ipp.data.Customer;
-import com.intuit.ipp.data.EmailAddress;
-import com.intuit.developer.tutorials.helper.userHelper;
+
+import java.util.Date;
 
 @Controller
 public class userController {
@@ -25,10 +27,12 @@ public class userController {
     OAuth2PlatformClientFactory factory;
 
     @Autowired
-    userHelper userH;
+    recordsHelper recordH;
 
     @Autowired
     public QBOServiceHelper helper;
+
+    private static final Logger logger = Logger.getLogger(userController.class);
 
     @ResponseBody
     @RequestMapping("/getUser")
@@ -40,49 +44,50 @@ public class userController {
         String accessToken = (String)session.getAttribute("access_token");
 
         try {
-            String info = userH.getUserInfo(realmId, accessToken);
-            info = formatData(info);
-            return info;
+            //get DataService
+            DataService service = helper.getDataService(realmId, accessToken);
+            CompanyInfo companyInfo = recordH.getUserInfo(service);
+
+            String userName = companyInfo.getLegalName();
+            String companyName = companyInfo.getCompanyName();
+            Date dateJoined = companyInfo.getCompanyStartDate();
+            String companyPhone = companyInfo.getPrimaryPhone().getFreeFormNumber();
+            String companyEmail = companyInfo.getEmail().getAddress();
+
+            String user = "User Name: " + userName + "\n" +
+                          "Company Name: "+ companyName + "\n" +
+                          "Date Joined: " + dateJoined + "\n" +
+                          "Phone: " + companyPhone + "\n" +
+                          "Email: " + createResponse(companyEmail) + "\n";
+
+            return user;
         } catch (Exception e) {
             return new JSONObject().put("response","Failed").toString();
         }
     }
 
-    private String formatData(String info) {
-        String[] commaSplit = info.split(",");
-
-        String formattedData = new String();
-
-        for(int i = 0; i < commaSplit.length; i++){
-            String[] colonSplit;
-            if(commaSplit[i].contains("{")) {
-                colonSplit = commaSplit[i].split(":");
-            }
-            else {
-                colonSplit = commaSplit[i].split(":", 2);
-            }
-
-            for(int j = 0; j < colonSplit.length; j++) {
-                colonSplit[j] = rmPunctuation(colonSplit[j]);
-            }
-
-            if(colonSplit.length == 3){
-                formattedData = formattedData + colonSplit[0] + "\n";
-                formattedData = formattedData + colonSplit[1] + " " + colonSplit[2] + "\n" ;
-            }
-            else{
-                formattedData = formattedData + colonSplit[0] + " " + colonSplit[1] + "\n";
-            }
+    /**
+     * Map object to json string
+     * @param entity
+     * @return
+     */
+    private String createResponse(Object entity) {
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonInString;
+        try {
+            jsonInString = mapper.writeValueAsString(entity);
+        } catch (JsonProcessingException e) {
+            return createErrorResponse(e);
+        } catch (Exception e) {
+            return createErrorResponse(e);
         }
-        return formattedData;
+        return jsonInString;
     }
 
-    String rmPunctuation (String s)
-    {
-        if(!s.equals("[]")) {
-            s = s.replaceAll("[\"{}\\[\\]]", "");
-        }
-        return s;
+    private String createErrorResponse(Exception e) {
+        logger.error("Exception while calling QBO ", e);
+        return new JSONObject().put("response","Failed").toString();
     }
+
 }
 
