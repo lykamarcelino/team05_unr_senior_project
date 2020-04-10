@@ -10,25 +10,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @CrossOrigin
-		(origins = "http://localhost:3000")
+        (origins = "http://localhost:3000")
 
 @Controller
-@RequestMapping("/getHome")
-public class homeController {
-	
-	@Autowired
+@RequestMapping("/getSettings")
+public class settingsController {
+
+    @Autowired
     OAuth2PlatformClientFactory factory;
-	
-	@Autowired
+
+    @Autowired
     public QBOServiceHelper helper;
 
-	@RequestMapping(method = RequestMethod.GET)
-	public @ResponseBody
-	String homeDisplay() {
+    @RequestMapping(method = RequestMethod.GET)
+    public @ResponseBody
+    String settingsDisplay() {
+        String realmID = oauthController.realmIdHolder;
+        String accessToke = oauthController.accessTokenHolder;
 
+        return "Empty";
+    }
 
-		return  "Empty";
-	}
-    
 }
-

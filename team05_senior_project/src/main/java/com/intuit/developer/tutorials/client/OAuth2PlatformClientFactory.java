@@ -1,14 +1,13 @@
 package com.intuit.developer.tutorials.client;
 
-import javax.annotation.PostConstruct;
-
+import com.intuit.oauth2.client.OAuth2PlatformClient;
+import com.intuit.oauth2.config.Environment;
+import com.intuit.oauth2.config.OAuth2Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
-import com.intuit.oauth2.client.OAuth2PlatformClient;
-import com.intuit.oauth2.config.Environment;
-import com.intuit.oauth2.config.OAuth2Config;
+import javax.annotation.PostConstruct;
 
 @Service
 @PropertySource(value="classpath:/application.properties", ignoreResourceNotFound=true)
@@ -29,8 +28,17 @@ public class OAuth2PlatformClientFactory {
 		//build the client
 		client  = new OAuth2PlatformClient(oauth2Config);
 	}
-	
-	
+
+	//Function used to logout and revoke the client token
+	public void logout(String token){
+		try{
+			client.revokeToken(token);
+		}
+		catch (Exception e){
+			System.out.println("Error revoking token");
+		}
+	}
+
 	public OAuth2PlatformClient getOAuth2PlatformClient()  {
 		return client;
 	}

@@ -1,14 +1,5 @@
 package com.intuit.developer.tutorials.helper;
 
-import java.util.List;
-
-import javax.servlet.http.HttpSession;
-
-import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
 import com.intuit.ipp.core.Context;
 import com.intuit.ipp.core.IEntity;
@@ -24,12 +15,19 @@ import com.intuit.ipp.util.Config;
 import com.intuit.oauth2.client.OAuth2PlatformClient;
 import com.intuit.oauth2.data.BearerTokenResponse;
 import com.intuit.oauth2.exception.OAuthException;
+import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Service
 public class QBOServiceHelper {
 	
 	@Autowired
-	OAuth2PlatformClientFactory factory;
+    OAuth2PlatformClientFactory factory;
 	
 	private static final Logger logger = Logger.getLogger(QBOServiceHelper.class);
 
