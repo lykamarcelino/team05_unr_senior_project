@@ -16,15 +16,9 @@ public class logoutController {
 
     @RequestMapping("/logout")
     public void connectToQuickbooks() {
-        try{
-            String accessToken = oauthController.accessTokenHolder;
-            oauthController.accessTokenHolder = null;
-            OAuth2PlatformClientFactory temp = new OAuth2PlatformClientFactory();
-            temp.logout(accessToken);
-        }
-        catch(Exception e){
-            System.out.println("Logout: Error revoking token");
-        }
+
+        oauthController.accessTokenHolder = null;
+        oauthController.realmIdHolder = null;
 
     }
 

@@ -2,6 +2,8 @@ package com.intuit.developer.tutorials.controller;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -44,6 +46,7 @@ public class estimatesController {
 
         String realmId = oauthController.realmIdHolder;
         String accessToken = oauthController.accessTokenHolder;
+
         try {
             DataService service = helper.getDataService(realmId, accessToken);
             List<Estimate> estimates = recordsH.getEstimates(service);
@@ -61,6 +64,9 @@ public class estimatesController {
             newEstimate.setTxnDate(txnDate);
             newEstimate.setQuantity(quantity);
             newEstimate.setUnitPrice(unitPrice);
+
+
+
         } catch (Exception e) {
             System.out.println("Error creating inventory response");
         }
