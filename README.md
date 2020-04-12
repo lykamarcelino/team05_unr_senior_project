@@ -94,3 +94,9 @@ The project notes will be updated as changes are made to the project.
 - Addition of the machine learning portions
 - Addition of the pdf generation
 - Work in Progress: Display graphs to the UI, connect the PDF generation
+
+**Date:** 04/12/2020
+* **Note:**
+- Refactor logout controller
+- Work in Progress: Display graphs to tghe UI, generate graphs, connect the PDF generation
+
