@@ -18,9 +18,9 @@ public class Graph {
 
     public Graph() {
         dataLabel = "data Label";
-        labels.add("Empty Label");
-        data.add(0.0);
-        colors.add("Empty Color");
+        labels.add("Empty Label"); labels.add("Empty Label2");
+        data.add(0.0); data.add(1.1);
+        colors.add("rgba(255, 99, 132, 0.6)"); colors.add("rgba(255, 99, 132, 0.6)");
         legendPosition = "right";
         title = "Graph Title";
         xAxisLabel = "Date"; //should always be data in theory
@@ -43,7 +43,7 @@ public class Graph {
         this.showLegend = showLegend;
     }
 
-    public void setGraphData(List<String> labels, List<Double> data, List<String> colors, String legendPosition, String title, String xAxisTitle, String yAxisTitle, Boolean showLegend) throws Exception {
+    public void setGraphData(List<String> labels, List<Double> data, List<String> colors, String legendPosition, String title, String xAxisTitle, String yAxisTitle, Boolean showLegend, String dataLabel) throws Exception {
         if(checkData(labels, data) == false){
             throw new Exception("ERROR: invalid data entry");
         }
@@ -56,6 +56,7 @@ public class Graph {
         this.xAxisLabel = xAxisTitle;
         this.yAxisLabel = yAxisTitle;
         this.showLegend = showLegend;
+        this.dataLabel = dataLabel;
     }
 
     public void setLegendPosition(String legendPosition){

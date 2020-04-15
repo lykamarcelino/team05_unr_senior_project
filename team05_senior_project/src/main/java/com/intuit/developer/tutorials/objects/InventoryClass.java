@@ -2,7 +2,6 @@ package com.intuit.developer.tutorials.objects;/*
  * Java class to store inventory information
  */
 
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
