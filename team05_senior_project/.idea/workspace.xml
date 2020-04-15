@@ -2,81 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da912e9-aff3-400e-9305-f4b84f164182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/AccountingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/BillController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CompanyInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InvoiceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/JobsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/RefreshTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/RevokeTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/accountDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/newGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/InventoryHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/newGraphHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/userHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/templates/connected.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/Cloud_Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/modules.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/connected.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/estimatesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/estimatesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/inventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/newGraphController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/reportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/reportsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/InventoryHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/userHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/reportsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/reportsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/InventoryHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/InventoryHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +108,7 @@
       <workItem from="1586823354202" duration="3028000" />
       <workItem from="1586826484897" duration="9112000" />
       <workItem from="1586890637065" duration="7340000" />
-      <workItem from="1586911380553" duration="11684000" />
+      <workItem from="1586911380553" duration="11933000" />
     </task>
     <servers />
   </component>
