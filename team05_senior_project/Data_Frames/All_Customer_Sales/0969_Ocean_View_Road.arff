@@ -1,0 +1,9 @@
+@relation 0969_Ocean_View_Road_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2019-11-07,216.25
+2019-12-08,365.0
+2020-02-22,477.5

@@ -1,0 +1,8 @@
+@relation Maintenance_and_Repair_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2020-01-05,1.0
+2020-03-05,1.0

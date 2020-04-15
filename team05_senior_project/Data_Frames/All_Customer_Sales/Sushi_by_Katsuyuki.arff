@@ -1,0 +1,9 @@
+@relation Sushi_by_Katsuyuki_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-02-06,80.0
+2020-02-13,80.0
+2020-02-20,80.0

@@ -1,0 +1,8 @@
+@relation Paulsen_Medical_Supplies_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-02-18,1005.0
+2020-02-20,1005.0

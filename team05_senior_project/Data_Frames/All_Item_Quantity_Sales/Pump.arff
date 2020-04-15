@@ -1,0 +1,12 @@
+@relation Pump_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2020-02-10,2.0
+2020-02-19,1.0
+2020-02-21,2.0
+2020-02-22,2.0
+2020-03-06,1.0
+2020-03-07,1.0

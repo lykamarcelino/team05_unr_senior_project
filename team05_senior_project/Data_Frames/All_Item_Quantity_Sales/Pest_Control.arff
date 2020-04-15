@@ -1,0 +1,12 @@
+@relation Pest_Control_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2019-11-07,2.0
+2020-01-05,2.0
+2020-02-05,1.0
+2020-02-18,2.0
+2020-02-20,4.5
+2020-03-01,2.0

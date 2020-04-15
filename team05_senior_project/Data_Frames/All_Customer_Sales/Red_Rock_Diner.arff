@@ -1,0 +1,9 @@
+@relation Red_Rock_Diner_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2019-12-15,156.0
+2020-02-18,70.0
+2020-02-20,70.0

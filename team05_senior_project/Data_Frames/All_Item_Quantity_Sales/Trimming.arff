@@ -1,0 +1,7 @@
+@relation Trimming_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2020-02-21,2.0

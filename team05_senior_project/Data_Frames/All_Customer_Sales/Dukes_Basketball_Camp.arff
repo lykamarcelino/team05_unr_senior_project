@@ -1,0 +1,7 @@
+@relation Dukes_Basketball_Camp_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-01-05,422.0

@@ -1,0 +1,8 @@
+@relation Sprinkler_Heads_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2020-02-08,15.0
+2020-02-10,10.0

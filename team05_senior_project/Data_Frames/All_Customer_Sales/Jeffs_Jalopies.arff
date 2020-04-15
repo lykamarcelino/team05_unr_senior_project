@@ -1,0 +1,7 @@
+@relation Jeffs_Jalopies_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-01-31,75.0

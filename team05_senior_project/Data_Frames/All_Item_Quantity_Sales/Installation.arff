@@ -1,0 +1,10 @@
+@relation Installation_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2019-10-04,4.0
+2020-02-18,5.0
+2020-02-20,5.0
+2020-03-20,1.0

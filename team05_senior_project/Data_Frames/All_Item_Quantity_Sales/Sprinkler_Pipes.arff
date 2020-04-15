@@ -1,0 +1,9 @@
+@relation Sprinkler_Pipes_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2019-12-15,27.0
+2020-02-10,6.0
+2020-02-22,4.0

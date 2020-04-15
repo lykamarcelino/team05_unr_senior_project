@@ -1,0 +1,14 @@
+@relation Concrete_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2020-01-05,5.0
+2020-02-14,1.0
+2020-02-19,5.0
+2020-02-22,5.0
+2020-03-02,1.0
+2020-03-09,1.0
+2020-03-19,1.0
+2020-03-23,1.0

@@ -1,0 +1,7 @@
+@relation Rondonuwu_Fruit_and_Vegi_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-02-21,75.0

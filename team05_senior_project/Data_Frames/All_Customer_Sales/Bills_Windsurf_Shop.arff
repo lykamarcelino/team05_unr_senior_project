@@ -1,0 +1,8 @@
+@relation Bills_Windsurf_Shop_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2019-11-07,175.0
+2020-01-05,85.0

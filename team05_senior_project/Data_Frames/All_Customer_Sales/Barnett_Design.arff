@@ -1,0 +1,7 @@
+@relation Barnett_Design_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Total_Amount numeric
+
+@data
+%Date,Total_Amount
+2020-02-08,305.0

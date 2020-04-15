@@ -1,0 +1,13 @@
+@relation Rocks_Sales
+@attribute Date date 'yyyy-MM-dd'
+@attribute Quantity numeric
+
+@data
+%Date,Quantity
+2019-10-27,4.0
+2019-12-15,4.0
+2020-01-05,6.0
+2020-02-18,8.0
+2020-02-19,7.0
+2020-02-20,8.0
+2020-03-08,1.0
