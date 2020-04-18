@@ -2,168 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da912e9-aff3-400e-9305-f4b84f164182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Report Title.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/homeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/inventoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/invoiceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javax/swing/annotations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/editGraphController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/estimatesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/helpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/inventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/invoiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/newGraphController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/notificationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/oauthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/reportsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/userController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/QBOServiceHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/recordsHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/tableOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/EstimatesClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InvoiceClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Notifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Callout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Sample.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/cache.properties.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/fileSnapshots.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/outputFileStates.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.gradle/2.9/taskArtifacts/taskArtifacts.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/libraries/gradle_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/Report Title.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/AccountingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/BillController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/CompanyInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/InvoiceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/JobsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/RefreshTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/ReportsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/reportsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/RevokeTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/accountDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/generateGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/generateReportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/newGraphController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/newGraphController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/InventoryHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/dataHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/graphGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/newGraphHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/static/modules.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/templates/connected.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/build/resources/main/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/javax/swing/annotations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/editGraphController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/helpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/newGraphController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/oauthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/reportsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/controller/userController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/QBOServiceHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/recordsHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/helper/tableOperations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/java/com/intuit/developer/tutorials/objects/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/views/Callout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CWAC/views/Sample.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/AccountingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/BillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CompanyInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/JobsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/RefreshTokenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/RevokeTokenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/accountDataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/newGraphController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/InventoryHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/newGraphHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/userHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/templates/connected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/Cloud_Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/connected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/newGraphController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/reportsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/InventoryHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/userHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/C2QB_white_btn_lg_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/C2QB_white_btn_lg_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/Cloud_Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/connected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +112,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1aI5auVaAS1qt8ufNMTpfPQTDR1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -244,6 +159,8 @@
       <workItem from="1586561242755" duration="2152000" />
       <workItem from="1586563738102" duration="344000" />
       <workItem from="1586564508199" duration="231000" />
+      <workItem from="1587252512211" duration="184000" />
+      <workItem from="1587252811275" duration="77000" />
     </task>
     <servers />
   </component>
@@ -255,38 +172,38 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1030@0.0.1920.1030" timestamp="1586495150432" />
-    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1586564081526">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081526" />
-    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1586564081526">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081526" />
-    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1586564081525">
+    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081525" />
-    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1586564081526">
+    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081526" />
-    <state width="1864" height="257" key="GridCell.Tab.1.bottom" timestamp="1586564081530">
+    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom" timestamp="1587252887636">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081530" />
-    <state width="1864" height="257" key="GridCell.Tab.1.center" timestamp="1586564081529">
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887636" />
+    <state width="1864" height="257" key="GridCell.Tab.1.center" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081529" />
-    <state width="1864" height="257" key="GridCell.Tab.1.left" timestamp="1586564081527">
+    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.1.left" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081527" />
-    <state width="1864" height="257" key="GridCell.Tab.1.right" timestamp="1586564081529">
+    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right" timestamp="1587252887635">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586564081529" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587252887635" />
     <state x="311" y="0" key="SettingsEditor" timestamp="1586493636193">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

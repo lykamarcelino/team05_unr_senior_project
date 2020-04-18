@@ -11,9 +11,11 @@ import weka.filters.supervised.attribute.TSLagMaker;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Vector;
 
 @Service
@@ -48,11 +50,11 @@ public class modelHelper {
         else if (generalSalesFragmentedFolder.exists()) {
             List<List<Double>> predictions = new Vector<>();
 
+            numPredictions = (numPredictions/7) + 1;
             for (String day : daysOfWeek) {
                 predictions.add(getPredictionList(numPredictions, generalSalesFragmentedFolderPath + "/" + "General_Sales_Frag_" + day + ".arff", "Total_Amount", "WEEKLY"));
             }
 
-            boolean firstItr = true;
             for (int i = 0; i < numPredictions; i++) {
                 for (int j = 0; j < 7; j++) {
                     try {
@@ -81,6 +83,7 @@ public class modelHelper {
             finalPredictions = getPredictionList(numPredictions, specifiedItemSaleFile.getPath(), "Quantity", "DAILY");
         }
         else if ( specifiedItemSaleFolder.exists()){
+            numPredictions = (numPredictions/7) + 1;
             List<List<Double>> predictions = new Vector<>();
 
             for (String day : daysOfWeek) {
@@ -108,6 +111,9 @@ public class modelHelper {
 
     public List<Double> getCustomerSalePredictions(int numPredictions, String customerName) throws Exception {
         File specifiedCustomerSaleFile = new File(customerSaleFolderPath + "/" + customerName + ".arff");
+
+
+
         File specifiedCustomerSaleFolder = new File( customerSaleFolderPath + "/" + customerName);
 
         List<Double> finalPredictions = new Vector<>();
@@ -117,6 +123,7 @@ public class modelHelper {
         else if ( specifiedCustomerSaleFolder.exists()){
             List<List<Double>> predictions = new Vector<>();
 
+            numPredictions = (numPredictions/7) + 1;
             for (String day : daysOfWeek) {
                 predictions.add(getPredictionList(numPredictions,   specifiedCustomerSaleFolder + "/" + customerName +"_frag_"+ day + ".arff", "Total_Amount", "WEEKLY"));
             }

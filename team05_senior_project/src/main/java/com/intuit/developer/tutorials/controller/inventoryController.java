@@ -24,7 +24,7 @@ import com.intuit.developer.tutorials.objects.InventoryClass;
 		(origins = "http://localhost:3000")
 
 @Controller
-public class inventoryController {
+public class InventoryController {
 
 	@Autowired
 	OAuth2PlatformClientFactory factory;
@@ -34,8 +34,6 @@ public class inventoryController {
 
 	@Autowired
 	public QBOServiceHelper helper;
-
-	private static final Logger logger = Logger.getLogger(inventoryController.class);
 
 	@RequestMapping(value = "/getInventory", method = RequestMethod.GET)
 	public @ResponseBody InventoryClass inventoryDisplay() {

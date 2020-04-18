@@ -36,6 +36,10 @@ public class dataFrameHelper {
     @Autowired
     tableOperations operationH;
 
+    public void makeStaticDataCSV() throws Exception{
+        Table allData;
+    }
+
     public void makeDataCSV(DataService service) throws Exception {
         Table allData;
 
@@ -123,7 +127,7 @@ public class dataFrameHelper {
                 }
             }
             else {
-                saveAsARFFWithFolder(t, t.name(), customerSalesFolderName, getItemSalesHeader(t.name()));
+                saveAsARFFWithFolder(t, t.name(), customerSalesFolderName, getCustomerPurchaseHeader(t.name()));
             }
         }
     }
@@ -204,29 +208,35 @@ public class dataFrameHelper {
             receipts = recordH.getSalesReceiptBatch(service, startPosition);
 
             for (SalesReceipt receipt : receipts) {
-                //get Constant data of each receipt
-                date = convertToLocalDate(receipt.getTxnDate());
-                customerName = fixLabel(receipt.getCustomerRef().getName());
+                try {
+                    //get Constant data of each receipt
+                    date = convertToLocalDate(receipt.getTxnDate());
+                    customerName = fixLabel(receipt.getCustomerRef().getName());
 
-                //Traverse Receipt Transactions
-                List<Line> subReceipts = receipt.getLine();
-                for (Line line : subReceipts) {
-                    if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
-                        itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
-                        try {
-                            quantity = line.getSalesItemLineDetail().getQty().doubleValue();
-                        } catch (Exception e) {
-                            quantity = 1.0;
+                    //Traverse Receipt Transactions
+                    List<Line> subReceipts = receipt.getLine();
+                    for (Line line : subReceipts) {
+                        if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
+                            itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
+                            try {
+                                quantity = line.getSalesItemLineDetail().getQty().doubleValue();
+                            } catch (Exception e) {
+                                quantity = 1.0;
+                            }
+                            saleAmount = line.getAmount().doubleValue();
+
+                            //append collected data to table
+                            dateColumn.append(date);
+                            customerNameColumn.append(customerName);
+                            itemNameColumn.append(itemName);
+                            quantityColumn.append(quantity);
+                            saleAmountColumn.append(saleAmount);
                         }
-                        saleAmount = line.getAmount().doubleValue();
-
-                        //append collected data to table
-                        dateColumn.append(date);
-                        customerNameColumn.append(customerName);
-                        itemNameColumn.append(itemName);
-                        quantityColumn.append(quantity);
-                        saleAmountColumn.append(saleAmount);
                     }
+                }
+                catch (Exception e){
+                    //try to retrieve transaction data if null then skip
+                    //corrupt transaction on intuit side
                 }
             }
 
@@ -257,30 +267,36 @@ public class dataFrameHelper {
         while (startPosition < numInvoices) {
             invoices = recordH.getInvoiceBatch(service, startPosition);
 
-            for (Invoice invoice : invoices) {
-                //get Constant data of each invoice
-                date = convertToLocalDate(invoice.getTxnDate());
-                customerName = fixLabel(invoice.getCustomerRef().getName());
+                for (Invoice invoice : invoices) {
+                    try{
+                        //get Constant data of each invoice
+                        date = convertToLocalDate(invoice.getTxnDate());
+                        customerName = fixLabel(invoice.getCustomerRef().getName());
 
-                //Traverse sub Invoice Transactions
-                List<Line> subInvoices = invoice.getLine();
-                for (Line line : subInvoices) {
-                    if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
-                        itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
-                        try {
-                            quantity = line.getSalesItemLineDetail().getQty().doubleValue();
-                        } catch (Exception e) {
-                            quantity = 1.0;
+                        //Traverse sub Invoice Transactions
+                        List<Line> subInvoices = invoice.getLine();
+                        for (Line line : subInvoices) {
+                            if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
+                                itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
+                                try {
+                                    quantity = line.getSalesItemLineDetail().getQty().doubleValue();
+                                } catch (Exception e) {
+                                    quantity = 1.0;
+                                }
+                                saleAmount = line.getAmount().doubleValue();
+
+                                //append collected data to table
+                                dateColumn.append(date);
+                                customerNameColumn.append(customerName);
+                                itemNameColumn.append(itemName);
+                                quantityColumn.append(quantity);
+                                saleAmountColumn.append(saleAmount);
+                            }
                         }
-                        saleAmount = line.getAmount().doubleValue();
-
-                        //append collected data to table
-                        dateColumn.append(date);
-                        customerNameColumn.append(customerName);
-                        itemNameColumn.append(itemName);
-                        quantityColumn.append(quantity);
-                        saleAmountColumn.append(saleAmount);
-                    }
+                }
+                catch (Exception e){
+                    //try to retrieve transaction data if null then skip
+                    //corrupt transaction on intuit side
                 }
             }
 
@@ -312,29 +328,35 @@ public class dataFrameHelper {
             estimates = recordH.getEstimateBatch(service, startPosition);
 
             for (Estimate estimate : estimates) {
-                //get Constant data of each estimate
-                date = convertToLocalDate(estimate.getTxnDate());
-                customerName = fixLabel(estimate.getCustomerRef().getName());
+                try{
+                    //get Constant data of each estimate
+                    date = convertToLocalDate(estimate.getTxnDate());
+                    customerName = fixLabel(estimate.getCustomerRef().getName());
 
-                //Traverse estimate Transactions
-                List<Line> subEstimates = estimate.getLine();
-                for (Line line : subEstimates) {
-                    if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
-                        itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
-                        try {
-                            quantity = line.getSalesItemLineDetail().getQty().doubleValue();
-                        } catch (Exception e) {
-                            quantity = 1.0;
+                    //Traverse estimate Transactions
+                    List<Line> subEstimates = estimate.getLine();
+                    for (Line line : subEstimates) {
+                        if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
+                            itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
+                            try {
+                                quantity = line.getSalesItemLineDetail().getQty().doubleValue();
+                            } catch (Exception e) {
+                                quantity = 1.0;
+                            }
+                            saleAmount = line.getAmount().doubleValue();
+
+                            //append collected data to table
+                            dateColumn.append(date);
+                            customerNameColumn.append(customerName);
+                            itemNameColumn.append(itemName);
+                            quantityColumn.append(quantity);
+                            saleAmountColumn.append(saleAmount);
                         }
-                        saleAmount = line.getAmount().doubleValue();
-
-                        //append collected data to table
-                        dateColumn.append(date);
-                        customerNameColumn.append(customerName);
-                        itemNameColumn.append(itemName);
-                        quantityColumn.append(quantity);
-                        saleAmountColumn.append(saleAmount);
                     }
+                }
+                catch (Exception e){
+                    //try to retrieve transaction data if null then skip
+                    //corrupt transaction on intuit side
                 }
             }
 
@@ -366,29 +388,35 @@ public class dataFrameHelper {
             memos = recordH.getCreditMemoBatch(service, startPosition);
 
             for (CreditMemo memo : memos) {
-                //get Constant data of each memo
-                date = convertToLocalDate(memo.getTxnDate());
-                customerName = fixLabel(memo.getCustomerRef().getName());
+                try{
+                    //get Constant data of each memo
+                    date = convertToLocalDate(memo.getTxnDate());
+                    customerName = fixLabel(memo.getCustomerRef().getName());
 
-                //Traverse memo Transactions
-                List<Line> subMemos = memo.getLine();
-                for (Line line : subMemos) {
-                    if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
-                        itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
-                        try {
-                            quantity = line.getSalesItemLineDetail().getQty().doubleValue();
-                        } catch (Exception e) {
-                            quantity = 1.0;
+                    //Traverse memo Transactions
+                    List<Line> subMemos = memo.getLine();
+                    for (Line line : subMemos) {
+                        if (line.getDetailType().equals(LineDetailTypeEnum.SALES_ITEM_LINE_DETAIL)) {
+                            itemName = fixLabel(line.getSalesItemLineDetail().getItemRef().getName());
+                            try {
+                                quantity = line.getSalesItemLineDetail().getQty().doubleValue();
+                            } catch (Exception e) {
+                                quantity = 1.0;
+                            }
+                            saleAmount = line.getAmount().doubleValue();
+
+                            //append collected data to table
+                            dateColumn.append(date);
+                            customerNameColumn.append(customerName);
+                            itemNameColumn.append(itemName);
+                            quantityColumn.append(quantity);
+                            saleAmountColumn.append(saleAmount);
                         }
-                        saleAmount = line.getAmount().doubleValue();
-
-                        //append collected data to table
-                        dateColumn.append(date);
-                        customerNameColumn.append(customerName);
-                        itemNameColumn.append(itemName);
-                        quantityColumn.append(quantity);
-                        saleAmountColumn.append(saleAmount);
                     }
+                }
+                catch (Exception e){
+                    //try to retrieve transaction data if null then skip
+                    //corrupt transaction on intuit side
                 }
             }
 
@@ -400,39 +428,17 @@ public class dataFrameHelper {
         return memoData;
     }
 
-    private List<String> getItemNames(DataService service) throws Exception {
-        int numItems = recordH.getNumItems(service),
-                start = 1;
+    public List<String> getItemNames(DataService service) throws Exception {
+        Table allData = loadAllData(service);
+        List<String> itemNames = allData.stringColumn("Item_Name").unique().asList();
 
-        List<String> itemNames = new Vector<>();
-        List<Item> items;
-
-        while (start < numItems) {
-            items = recordH.getItemBatch(service, start);
-            start = start + recordH.getPagination();
-
-            for (Item i : items) {
-                itemNames.add(fixLabel(i.getName()));
-            }
-        }
         return itemNames;
     }
 
-    private List<String> getCustomerNames(DataService service) throws Exception {
-        int numCustomers = recordH.getNumCustomers(service),
-                start = 1;
+    public List<String> getCustomerNames(DataService service) throws Exception {
+        Table allData = loadAllData(service);
+        List<String> customerNames = allData.stringColumn("Customer_Name").unique().asList();
 
-        List<String> customerNames = new Vector<>();
-        List<Customer> customers;
-
-        while (start < numCustomers) {
-            customers = recordH.getCustomerBatch(service, start);
-            start = start + recordH.getPagination();
-
-            for (Customer c : customers) {
-                customerNames.add(fixLabel(c.getDisplayName()));
-            }
-        }
         return customerNames;
     }
 
@@ -455,7 +461,7 @@ public class dataFrameHelper {
         return label;
     }
 
-    private Table loadAllData(DataService service) throws Exception {
+    public Table loadAllData(DataService service) throws Exception {
         if (!CSVExists(customerDataMainFileName)) {
             makeDataCSV(service);
         }
@@ -471,7 +477,7 @@ public class dataFrameHelper {
     /**
      * Note this function check for the existence of a file only in main folder directory
      **/
-    private boolean CSVExists(String fileName) {
+    public boolean CSVExists(String fileName) {
         File file = new File(path + "/" + mainFolderName + "/" + fileName + ".csv");
         return file.exists();
     }

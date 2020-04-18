@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intuit.ipp.data.*;
 import com.intuit.ipp.services.DataService;
+import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
@@ -25,92 +26,132 @@ import static com.itextpdf.io.font.constants.StandardFonts.TIMES_ROMAN;
 import static com.itextpdf.layout.property.TabAlignment.CENTER;
 import static com.itextpdf.layout.property.TabAlignment.LEFT;
 
-
 public class PDFconverter {
-    public String reportTitle = "Report Title";
-    public String userChoice = " all";
-    public boolean tableChoice = true;
-    public final String DEST = "C:\\Users\\Chant\\Documents\\secretProject\\CWAC\\" + reportTitle + ".pdf";
+    public static String folder = "CWAC Reports";
+    public String reportTitle = "Reporj";
+    public boolean tableChoice = true; //grid lines
+    public boolean dirCheck = false; //ignore
+    public boolean customerCheck = true; //customer info
+    public boolean receiptCheck = true;
+    public boolean invoiceCheck = true;
+    public boolean estimatesCheck = true;
+    public boolean itemsCheck= true;
+    public boolean paymentsCheck = true;
+    public boolean graphCheck = true;
 
-    public void generatePDF(DataService service) throws Exception {
+    public static String  home = System.getProperty("user.home");
+    public static final String directory = home + File.separator + "Downloads" + File.separator + folder;
+    public final String DEST = directory + File.separator +  reportTitle + ".pdf";
+
+    public void generatePDF(DataService service, CompanyInfo companyInfo) throws Exception {
+        File dir = new File(directory);
         File file = new File(DEST);
-        file.getParentFile().mkdirs();
 
-        PdfWriter writer = new PdfWriter(DEST);
-        PdfDocument pdf = new PdfDocument(writer);
-        Document doc = new Document(pdf);
+        if(!(dir.exists())) {
+            dirCheck = dir.mkdir();
+        }
+        if(dir.exists()){
+            if (file.createNewFile()) {
 
-        recordsHelper recHelper = new recordsHelper();
+                PdfWriter writer = new PdfWriter(DEST);
+                PdfDocument pdf = new PdfDocument(writer);
+                Document doc = new Document(pdf);
 
-        AreaBreak aB = new AreaBreak();
+                recordsHelper recHelper = new recordsHelper();
 
-        PdfFont title = PdfFontFactory.createFont(TIMES_BOLD);
-        PdfFont regular = PdfFontFactory.createFont(TIMES_ROMAN);
-        PdfFont bold = PdfFontFactory.createFont(TIMES_BOLD);
+                AreaBreak aB = new AreaBreak();
 
-        String compName = getCompName(recHelper.getUserInfo(service));
-        String compAdd = getCompAdd(recHelper.getUserInfo(service));
-        String compEmail = getCompEmail(recHelper.getUserInfo(service));
-        String compPhone = getCompNum(recHelper.getUserInfo(service));
+                PdfFont title = PdfFontFactory.createFont(TIMES_BOLD);
+                PdfFont regular = PdfFontFactory.createFont(TIMES_ROMAN);
+                PdfFont bold = PdfFontFactory.createFont(TIMES_BOLD);
 
-        Paragraph cover = new Paragraph(reportTitle).setFont(title).setFontSize(28);
-        Paragraph nameCover = new Paragraph(compName);
-        Paragraph addCover = new Paragraph(compAdd);
-        Paragraph emailCover = new Paragraph(compEmail);
-        Paragraph phoneCover = new Paragraph(compPhone);
+                String compName = getCompName(companyInfo);
+                String compAdd = getCompAdd(companyInfo);
+                String compEmail = getCompEmail(companyInfo);
+                String compPhone = getCompNum(companyInfo);
 
-        PageSize pageSize = pdf.getDefaultPageSize();
-        float width = pageSize.getWidth() - doc.getLeftMargin() - doc.getRightMargin();
+                Paragraph cover = new Paragraph(reportTitle).setFont(title).setFontSize(28);
+                Paragraph nameCover = new Paragraph(compName);
+                Paragraph addCover = new Paragraph(compAdd);
+                Paragraph emailCover = new Paragraph(compEmail);
+                Paragraph phoneCover = new Paragraph(compPhone);
 
-        centerText(doc, width, cover);
-        centerText(doc, width, nameCover);
-        centerText(doc, width, addCover);
-        centerText(doc, width, emailCover);
-        centerText(doc, width, phoneCover);
+                PageSize pageSize = pdf.getDefaultPageSize();
+                float width = pageSize.getWidth() - doc.getLeftMargin() - doc.getRightMargin();
 
-        doc.add(aB);
+                centerText(doc, width, cover);
+                centerText(doc, width, nameCover);
+                centerText(doc, width, addCover);
+                centerText(doc, width, emailCover);
+                centerText(doc, width, phoneCover);
 
-        Paragraph custSec = new Paragraph("CUSTOMERS' INFORMATION: ").setFont(bold);
-        doc.add(custSec);
-        getCustomerInfo(doc, (recHelper.getCustomers(service)), tableChoice);
+                if(customerCheck) {
+                    doc.add(aB);
 
-        doc.add(aB);
+                    Paragraph custSec = new Paragraph("CUSTOMERS' INFORMATION: ").setFont(bold);
+                    doc.add(custSec);
+                    getCustomerInfo(doc, (recHelper.getCustomers(service)), tableChoice);
+                }
 
-        Paragraph receiptsSec = new Paragraph("RECEIPTS: ").setFont(bold);
-        doc.add(receiptsSec);
-        getReceiptInfo(doc, recHelper.getSalesReceipts(service), tableChoice);
+                if(receiptCheck) {
+                    doc.add(aB);
 
-        doc.add(aB);
+                    Paragraph receiptsSec = new Paragraph("RECEIPTS: ").setFont(bold);
+                    doc.add(receiptsSec);
+                    getReceiptInfo(doc, recHelper.getSalesReceipts(service), tableChoice);
+                }
 
-        Paragraph invoiceSec = new Paragraph("INVOICES: ").setFont(bold);
-        doc.add((IBlockElement) invoiceSec);
+                if(invoiceCheck) {
+                    doc.add(aB);
 
-        getInvoiceInfo(doc, recHelper.getInvoices(service), tableChoice);
+                    Paragraph invoiceSec = new Paragraph("INVOICES: ").setFont(bold);
+                    doc.add((IBlockElement) invoiceSec);
+                    getInvoiceInfo(doc, recHelper.getInvoices(service), tableChoice);
+                }
 
-        doc.add(aB);
+                if(estimatesCheck) {
+                    doc.add(aB);
 
-        Paragraph estimateSec = new Paragraph("ESTIMATES: ").setFont(bold);
-        doc.add(estimateSec);
-        getEstimatesInfo(doc, recHelper.getEstimates(service), tableChoice);
+                    Paragraph estimateSec = new Paragraph("ESTIMATES: ").setFont(bold);
+                    doc.add(estimateSec);
+                    getEstimatesInfo(doc, recHelper.getEstimates(service), tableChoice);
+                }
 
-        doc.add(aB);
+                if(itemsCheck) {
+                    doc.add(aB);
 
-        Paragraph itemsSec = new Paragraph("ITEMS: ").setFont(bold);
-        doc.add(itemsSec);
-        getItemsInfo(doc, recHelper.getItems(service), tableChoice);
+                    Paragraph itemsSec = new Paragraph("ITEMS: ").setFont(bold);
+                    doc.add(itemsSec);
+                    getItemsInfo(doc, recHelper.getItems(service), tableChoice);
+                }
 
-        doc.add(aB);
+                if(paymentsCheck) {
+                    doc.add(aB);
+                    Paragraph paymentsSec = new Paragraph("PAYMENTS: ").setFont(bold);
+                    doc.add(paymentsSec);
+                    getPaymentsInfo(doc, recHelper.getPayments(service), tableChoice);
+                }
 
-        Paragraph paymentsSec = new Paragraph("PAYMENTS: ").setFont(bold);
-        doc.add(paymentsSec);
-        getPaymentsInfo(doc, recHelper.getPayments(service), tableChoice);
+                if(graphCheck) {
+                    doc.add(aB);
+                    Paragraph predictionsSec = new Paragraph("GRAPH PREDICTIONS: ").setFont(bold);
+                    doc.add(predictionsSec);
+                    String graphFile = "C:\\Users\\Chant\\Documents\\graph1.png";
+                    String graph2File = "C:\\Users\\Chant\\Documents\\graph2.png";
+                    Image graph1 = new Image(ImageDataFactory.create(graphFile));
+                    Image graph2 = new Image(ImageDataFactory.create(graph2File));
+                    doc.add(graph1);
+                    doc.add(graph2);
+                }
 
-        doc.close();
+                doc.close();
+            }
+        }
     }
 
     public static String getCompName(CompanyInfo userInfo) {
         String data = new String();
-        data = data + createResponse("Company Name: " + userInfo.getCompanyName());
+        data = createResponse("Company Name: " + userInfo.getCompanyName());
         data = data.replaceAll("\"", "");
         return data;
     }
@@ -215,7 +256,7 @@ public class PDFconverter {
                 receiptInfo += createResponse(itemName.get(i)) + "\t";
                 receiptInfo += createResponse(description.get(i)) + "\t";
                 receiptInfo += createResponse(docNumber.get(i)) + "\t";
-                receiptInfo += txnDate.get(i) + "\t";
+                receiptInfo += convertToLocalDate(txnDate.get(i)) + "\t";
                 receiptInfo += quantity.get(i) + "\t";
                 receiptInfo += unitPrice.get(i) + "\t\n";
             }
@@ -237,7 +278,7 @@ public class PDFconverter {
                 receiptInformation[0] = createResponse(itemName.get(i)).replaceAll("\"", "");
                 receiptInformation[1] = createResponse(description.get(i)).replaceAll("\"", "");
                 receiptInformation[2] = createResponse(docNumber.get(i)).replaceAll("\"", "");
-                receiptInformation[3] = String.valueOf(txnDate.get(i));
+                receiptInformation[3] = String.valueOf(convertToLocalDate(txnDate.get(i)));
                 receiptInformation[4] = String.valueOf(quantity.get(i));
                 receiptInformation[5] = String.valueOf(unitPrice.get(i));
 
@@ -268,12 +309,12 @@ public class PDFconverter {
 
         if (tableChoice == false) {
             for (int i = 0; i < invoices.size(); i++) {
-                invoiceInfo += (createResponse(itemName.get(i)) + "\t");
-                invoiceInfo += (createResponse(description.get(i)) + "\t");
-                invoiceInfo += (createResponse(docNumber.get(i)) + "\t");
-                invoiceInfo += (txnDate.get(i) + "\t");
-                invoiceInfo += (quantity.get(i) + "\t");
-                invoiceInfo += (unitPrice.get(i) + "\t\n");
+                invoiceInfo += createResponse(itemName.get(i)) + "\t";
+                invoiceInfo += createResponse(description.get(i)) + "\t";
+                invoiceInfo += createResponse(docNumber.get(i)) + "\t";
+                invoiceInfo += convertToLocalDate(txnDate.get(i)) + "\t";
+                invoiceInfo += quantity.get(i) + "\t";
+                invoiceInfo += unitPrice.get(i) + "\t\n";
             }
             invoiceInfo = invoiceInfo.replaceAll("\"", "");
             inInfo.add(invoiceInfo);
@@ -293,7 +334,7 @@ public class PDFconverter {
                 invoiceInformation[0] = createResponse(itemName.get(i)).replaceAll("\"", "");
                 invoiceInformation[1] = createResponse(description.get(i)).replaceAll("\"", "");
                 invoiceInformation[2] = createResponse(docNumber.get(i)).replaceAll("\"", "");
-                invoiceInformation[3] = String.valueOf(txnDate.get(i));
+                invoiceInformation[3] = String.valueOf(convertToLocalDate(txnDate.get(i)));
                 invoiceInformation[4] = String.valueOf(quantity.get(i));
                 invoiceInformation[5] = String.valueOf(unitPrice.get(i));
 
@@ -327,7 +368,7 @@ public class PDFconverter {
                 estimatesInfo += (createResponse(itemName.get(i)) + "\t");
                 estimatesInfo += (createResponse(description.get(i)) + "\t");
                 estimatesInfo += (createResponse(docNumber.get(i)) + "\t");
-                estimatesInfo += (txnDate.get(i) + "\t");
+                estimatesInfo += convertToLocalDate(txnDate.get(i)) + "\t";
                 estimatesInfo += (quantity.get(i) + "\t");
                 estimatesInfo += (unitPrice.get(i) + "\t\n");
             }
@@ -349,7 +390,7 @@ public class PDFconverter {
                 estimateInformation[0] = createResponse(itemName.get(i)).replaceAll("\"", "");
                 estimateInformation[1] = createResponse(description.get(i)).replaceAll("\"", "");
                 estimateInformation[2] = createResponse(docNumber.get(i)).replaceAll("\"", "");
-                estimateInformation[3] = String.valueOf(txnDate.get(i));
+                estimateInformation[3] = String.valueOf(convertToLocalDate(txnDate.get(i)));
                 estimateInformation[4] = String.valueOf(quantity.get(i));
                 estimateInformation[5] = String.valueOf(unitPrice.get(i));
 
@@ -421,7 +462,7 @@ public class PDFconverter {
 
         if (tableChoice == false) {
             for (Payment p : payments) {
-                paymentsInfo += p.getTxnDate() + "  ";
+                paymentsInfo += convertToLocalDate(p.getTxnDate()) + "  ";
                 paymentsInfo += p.getDocNumber() + "  ";
                 //paymentsInfo += p.getLine().get(0).getSalesItemLineDetail().getItemRef().getName() + "  ";
                 //paymentsInfo += p.getLine().get(0).getSalesItemLineDetail().getQty() + "  ";
@@ -442,7 +483,9 @@ public class PDFconverter {
             for (Payment p : payments) {
                 List<String> dataList = new ArrayList<>();
 
-                paymentsInformation[0] = createResponse(p.getTxnDate()).replaceAll("\"", "");
+                LocalDate date = convertToLocalDate(p.getTxnDate());
+                paymentsInformation[0] = date.toString().replaceAll("\"", "");
+
                 paymentsInformation[1] = createResponse(p.getDocNumber()).replaceAll("\"", "");
                 paymentsInformation[2] = createResponse(p.getTotalAmt()).replaceAll("\"", "");
 
@@ -473,7 +516,7 @@ public class PDFconverter {
         return jsonInString;
     }
 
-    private LocalDate convertToLocalDate(Date date) {
+    private static LocalDate convertToLocalDate(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
 
