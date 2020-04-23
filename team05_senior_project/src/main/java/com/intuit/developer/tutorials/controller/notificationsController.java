@@ -29,14 +29,14 @@ public class notificationsController {
     Notifications getUserInJSON(){
         Notifications notifications = new Notifications();
 
-            String warning = "Inventory Warning: There is not enough concrete to complete sales. ";
-            notifications.setWarning(warning);
+            String warningHolder = "Lighting sales is predicted to be at a high for April.";
+            notifications.warning = warningHolder;
 
-            String inventory = "Current inventory of item sprinklers will last until next week";
-            notifications.setInventory(inventory);
+            String inventoryHolder = "Rock Fountain is predicted to sell at the highest rate on 04/07.";
+            notifications.inventory = inventoryHolder;
 
-            String sales = "Sales for sand are projected to sell at a higher rate than expected!" ;
-            notifications.setSales(sales);
+            String salesHolder = "05/14 is predicted to be the highest day of sales!";
+            notifications.sales = salesHolder;
 
         return notifications;
     }

@@ -2,12 +2,11 @@ package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;
+import com.intuit.developer.tutorials.objects.Notifications;
+import com.intuit.developer.tutorials.objects.Settings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
         (origins = "http://localhost:3000")
@@ -24,11 +23,16 @@ public class settingsController {
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody
-    String settingsDisplay() {
-        String realmID = oauthController.realmIdHolder;
-        String accessToke = oauthController.accessTokenHolder;
+    void settingsDisplay(@RequestHeader("Notifications")String changeNotifications, @RequestHeader("Email") String changeEmail, @RequestHeader("Weekly") String changeWeekly) {
 
-        return "Empty";
+        //Will read in the input from the frontend and process to change the settings
+        //Setting changes are not actually being made as notifications, email, and weekly changes are not being processed
+
+        Settings settings = new Settings();
+
+        settings.notifications = changeNotifications;
+        settings.email = changeEmail;
+        settings.weekly = changeWeekly;
     }
 
 }
