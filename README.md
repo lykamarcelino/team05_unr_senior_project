@@ -100,3 +100,8 @@ The project notes will be updated as changes are made to the project.
 - Refactor logout controller
 - Work in Progress: Display graphs to tghe UI, generate graphs, connect the PDF generation
 
+**Date:** 04/23/2020
+* **Note:**
+- Combine reports, graphs, and other changes from (4/18 Commit, changes were not saved in README)
+- Addition of notification and settings classes and controllers
+- Work in Progress: Any final changes
