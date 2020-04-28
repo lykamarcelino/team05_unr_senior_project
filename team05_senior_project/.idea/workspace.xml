@@ -8,45 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GetReportListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/DownloadReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/homeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/invoiceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Report.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/notificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/notificationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +92,9 @@
       <workItem from="1587252512211" duration="184000" />
       <workItem from="1587252811275" duration="77000" />
       <workItem from="1587663967846" duration="1546000" />
+      <workItem from="1587666826286" duration="872000" />
+      <workItem from="1588010495529" duration="187000" />
+      <workItem from="1588011319425" duration="679000" />
     </task>
     <servers />
   </component>
@@ -146,38 +110,38 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1030@0.0.1920.1030" timestamp="1586495150432" />
-    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1587664949398">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1587664949397">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1587664949397">
+    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1587664949397">
+    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1864" height="257" key="GridCell.Tab.1.bottom" timestamp="1587664949398">
+    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom" timestamp="1588013082728">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1864" height="257" key="GridCell.Tab.1.center" timestamp="1587664949398">
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082728" />
+    <state width="1864" height="257" key="GridCell.Tab.1.center" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1864" height="257" key="GridCell.Tab.1.left" timestamp="1587664949398">
+    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.1.left" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1864" height="257" key="GridCell.Tab.1.right" timestamp="1587664949398">
+    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082727" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right" timestamp="1588013082728">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082728" />
     <state x="311" y="0" key="SettingsEditor" timestamp="1586493636193">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
