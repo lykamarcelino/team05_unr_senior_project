@@ -10,19 +10,19 @@ public class Report {
     public static String  home = System.getProperty("user.home");
     public static final String directory = home + File.separator + "Downloads" + File.separator + folder;
 
-    int number = 0;
+    String number = "0";
     String name = new String();
     String date = new String();
     String graph = new String();
 
     public Report() {
-        number = 1;
-        name = "My Report";
+        number = "1";
+        name = "name";
         date = "04/20/2020";
-        graph = "Graph";
+        graph = "graph";
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
@@ -38,7 +38,7 @@ public class Report {
         return graph;
     }
 
-    public void setDesc(int number, String name, String date, String graph) {
+    public void setDesc(String number, String name, String date, String graph) {
         this.number = number;
         this.name = name;
         this.date = date;
@@ -57,7 +57,7 @@ public class Report {
         this.name = name;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -68,9 +68,9 @@ public class Report {
 
         fileNames = f.list();
 
-        // For each pathname in the pathnames array
         for (String fileName : fileNames) {
-            reportNames.add(fileName);
+            if(fileName.endsWith(".pdf"))
+                reportNames.add(fileName);
         }
         return reportNames;
     }
@@ -87,6 +87,28 @@ public class Report {
             dates.add(date);
         }
         return dates;
+    }
+
+    public static List<String> getGraphs() {
+        List<String> graphs = new Vector<>();
+        String[] fileNames;
+        List<String> reportNames = new Vector<>();
+        File f = new File(directory);
+
+        fileNames = f.list();
+
+        for (String fileName : fileNames) {
+            if(fileName.endsWith(".pdf")) {
+                String fName = fileName.substring(0, fileName.length() - 4);
+                File file = new File(directory + File.separator + fName + ".png");
+                if(file.exists())
+                    graphs.add("Graph");
+                else
+                    graphs.add("No Graph");
+            }
+        }
+        return graphs;
+
     }
 
     public static List<String> getNumbers() {

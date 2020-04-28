@@ -71,7 +71,8 @@ public class customerListController {
         List<String> newLabels = new Vector<>();
         for(String s : customerNames){
             s = s.replaceAll("_", " ");
-            newLabels.add(s);
+            if(!s.contains("deleted"))
+                newLabels.add(s);
         }
 
         return newLabels;

@@ -14,19 +14,22 @@ import com.intuit.developer.tutorials.helper.QBOServiceHelper;
 import com.intuit.developer.tutorials.helper.dataFrameHelper;
 import com.intuit.developer.tutorials.helper.modelHelper;
 import com.intuit.developer.tutorials.helper.recordsHelper;
+import com.intuit.developer.tutorials.objects.DashGraph;
 import com.intuit.developer.tutorials.objects.Graph;
 import com.intuit.ipp.services.DataService;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 @CrossOrigin
 (origins = "http://localhost:3000")
@@ -50,6 +53,8 @@ public class newGraphController {
 							"rgba(100, 90, 50, 0.6)",
 							"rgba(35, 160, 100, 0.6)",};
 	int numColor = 15;
+
+	String path = Paths.get("").toAbsolutePath().toString();
 
 	@Autowired
     OAuth2PlatformClientFactory factory;
@@ -83,7 +88,7 @@ public class newGraphController {
 	public @ResponseBody
 	Graph getGraphInJson(@RequestHeader("graphName") String graphName, @RequestHeader("numPred") String numPred,
 						 @RequestHeader("predFrequency") String predFrequency, @RequestHeader("from") String from,
-						 @RequestHeader("id") String id) throws Exception {
+						 @RequestHeader("id") String id, @RequestHeader("graphType") String graphType) throws Exception {
 		String realmID = oauthController.realmIdHolder;
 		String accessToke = oauthController.accessTokenHolder;
 
@@ -114,7 +119,7 @@ public class newGraphController {
 
 				dates = modelH.getMatchingDates( lastDate,predictions.size());
 
-				dataLabel = "Total" + predFrequency + "Sales";
+				dataLabel = "Total " + predFrequency + " Sales";
 				yAxis = "Sales in USD";
 			}
 			else if(from.equals("Item_Quantity_Sales")){
@@ -148,9 +153,61 @@ public class newGraphController {
 			Graph graph = new Graph();
 			graph.setGraphData(dates, predictions, color, "right", graphName, "Date", yAxis, true, dataLabel);
 
+			setDashGraph(graph, graphType);
+
 			return graph;
 		} catch (Exception e) {
 			throw new Exception("Invalid Graph Object");
+		}
+	}
+
+	private void setDashGraph(Graph graph, String graphType) throws Exception {
+		Boolean fill = true, show = true;
+		if(graphType.equals("Scatter") || graphType.equals("Line"))
+			fill = false;
+
+		if(graphType.equals("Bar"))
+			show = false;
+
+		DashGraph dashGraph = new DashGraph(graph.getLabels(), graph.getData(), graph.getColors(), graph.getLegendPosition(),
+				graph.getTitle(), graph.getxAxisLabel(), graph.getyAxisLabel(), graph.getDataLabel(), show, graphType, fill);
+
+		saveDashGraph(createResponse(dashGraph));
+	}
+
+	private void saveDashGraph(String response) throws IOException {
+		System.out.println(response);
+		//overwriteFirstFile
+		File first = new File(path + "/graphOne.txt");
+		File second = new File(path + "/graphTwo.txt");
+
+		if (first.exists() && second.exists()) {
+			FileWriter writer = new FileWriter(first);
+			BufferedReader reader;
+			reader = new BufferedReader(new FileReader(second));
+
+			//pass second file to first
+			String line = reader.readLine();
+			writer.write(line);
+			writer.close();
+			reader.close();
+
+			//overwrite second file
+			FileWriter sWriter = new FileWriter(second);
+			sWriter.write(response);
+			sWriter.close();
+		} else if (!first.exists() && !second.exists()) {
+			first.createNewFile();
+			FileWriter writer = new FileWriter(first);
+			writer.write(response);
+			writer.close();
+		} else if (first.exists() && !second.exists()) {
+			second.createNewFile();
+			FileWriter writer = new FileWriter(second);
+			writer.write(response);
+			writer.close();
+		} else {
+			System.out.println("Error!! in Dash Graphs");
 		}
 	}
 
@@ -280,5 +337,22 @@ public class newGraphController {
 			colors.add(staticColor[j]);
 		}
 		return colors;
+	}
+
+	private static String createResponse(Object entity) {
+		ObjectMapper mapper = new ObjectMapper();
+		String jsonInString;
+		try {
+			jsonInString = mapper.writeValueAsString(entity);
+		} catch (JsonProcessingException e) {
+			return createErrorResponse(e);
+		} catch (Exception e) {
+			return createErrorResponse(e);
+		}
+		return jsonInString;
+	}
+
+	private static String createErrorResponse(Exception e) {
+		return new JSONObject().put("response", "Failed").toString();
 	}
 }

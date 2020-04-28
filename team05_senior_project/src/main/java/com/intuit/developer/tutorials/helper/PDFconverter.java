@@ -11,9 +11,11 @@ import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.*;
 import org.json.JSONObject;
 
+import java.awt.*;
 import java.io.File;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -28,22 +30,21 @@ import static com.itextpdf.layout.property.TabAlignment.LEFT;
 
 public class PDFconverter {
     public static String folder = "CWAC Reports";
-    public String reportTitle = "Reporj";
-    public boolean tableChoice = true; //grid lines
-    public boolean dirCheck = false; //ignore
-    public boolean customerCheck = true; //customer info
-    public boolean receiptCheck = true;
-    public boolean invoiceCheck = true;
-    public boolean estimatesCheck = true;
-    public boolean itemsCheck= true;
-    public boolean paymentsCheck = true;
-    public boolean graphCheck = true;
+    boolean dirCheck = false; //ignore
 
-    public static String  home = System.getProperty("user.home");
-    public static final String directory = home + File.separator + "Downloads" + File.separator + folder;
-    public final String DEST = directory + File.separator +  reportTitle + ".pdf";
+    public void generatePDF(DataService service, CompanyInfo companyInfo, String graphName, boolean custCheck, boolean gridLineCheck, boolean transCheck, boolean inCheck, boolean disGraphCheck) throws Exception {
+        String reportTitle = graphName;
+        boolean gridCheck = gridLineCheck; //grid lines
+        boolean customerCheck = custCheck; //customer info
+        boolean transactionsCheck = transCheck;
+        boolean itemsCheck = inCheck;
+        boolean graphCheck = disGraphCheck;
 
-    public void generatePDF(DataService service, CompanyInfo companyInfo) throws Exception {
+        String  home = System.getProperty("user.home");
+        final String directory = home + File.separator + "Downloads" + File.separator + folder;
+        final String DEST = directory + File.separator +  reportTitle + ".pdf";
+        final String graphDest = directory + File.separator +  reportTitle + ".png";
+
         File dir = new File(directory);
         File file = new File(DEST);
 
@@ -52,7 +53,6 @@ public class PDFconverter {
         }
         if(dir.exists()){
             if (file.createNewFile()) {
-
                 PdfWriter writer = new PdfWriter(DEST);
                 PdfDocument pdf = new PdfDocument(writer);
                 Document doc = new Document(pdf);
@@ -90,31 +90,38 @@ public class PDFconverter {
 
                     Paragraph custSec = new Paragraph("CUSTOMERS' INFORMATION: ").setFont(bold);
                     doc.add(custSec);
-                    getCustomerInfo(doc, (recHelper.getCustomers(service)), tableChoice);
+                    getCustomerInfo(doc, (recHelper.getCustomers(service)), gridCheck);
                 }
 
-                if(receiptCheck) {
+                if(transactionsCheck) {
                     doc.add(aB);
 
                     Paragraph receiptsSec = new Paragraph("RECEIPTS: ").setFont(bold);
                     doc.add(receiptsSec);
-                    getReceiptInfo(doc, recHelper.getSalesReceipts(service), tableChoice);
+                    getReceiptInfo(doc, recHelper.getSalesReceipts(service), gridCheck);
                 }
 
-                if(invoiceCheck) {
+                if(transactionsCheck) {
                     doc.add(aB);
 
                     Paragraph invoiceSec = new Paragraph("INVOICES: ").setFont(bold);
                     doc.add((IBlockElement) invoiceSec);
-                    getInvoiceInfo(doc, recHelper.getInvoices(service), tableChoice);
+                    getInvoiceInfo(doc, recHelper.getInvoices(service), gridCheck);
                 }
 
-                if(estimatesCheck) {
+                if(transactionsCheck) {
                     doc.add(aB);
 
                     Paragraph estimateSec = new Paragraph("ESTIMATES: ").setFont(bold);
                     doc.add(estimateSec);
-                    getEstimatesInfo(doc, recHelper.getEstimates(service), tableChoice);
+                    getEstimatesInfo(doc, recHelper.getEstimates(service), gridCheck);
+                }
+
+                if(transactionsCheck) {
+                    doc.add(aB);
+                    Paragraph paymentsSec = new Paragraph("PAYMENTS: ").setFont(bold);
+                    doc.add(paymentsSec);
+                    getPaymentsInfo(doc, recHelper.getPayments(service), gridCheck);
                 }
 
                 if(itemsCheck) {
@@ -122,31 +129,21 @@ public class PDFconverter {
 
                     Paragraph itemsSec = new Paragraph("ITEMS: ").setFont(bold);
                     doc.add(itemsSec);
-                    getItemsInfo(doc, recHelper.getItems(service), tableChoice);
-                }
-
-                if(paymentsCheck) {
-                    doc.add(aB);
-                    Paragraph paymentsSec = new Paragraph("PAYMENTS: ").setFont(bold);
-                    doc.add(paymentsSec);
-                    getPaymentsInfo(doc, recHelper.getPayments(service), tableChoice);
+                    getItemsInfo(doc, recHelper.getItems(service), gridCheck);
                 }
 
                 if(graphCheck) {
                     doc.add(aB);
                     Paragraph predictionsSec = new Paragraph("GRAPH PREDICTIONS: ").setFont(bold);
                     doc.add(predictionsSec);
-                    String graphFile = "C:\\Users\\Chant\\Documents\\graph1.png";
-                    String graph2File = "C:\\Users\\Chant\\Documents\\graph2.png";
-                    Image graph1 = new Image(ImageDataFactory.create(graphFile));
-                    Image graph2 = new Image(ImageDataFactory.create(graph2File));
-                    doc.add(graph1);
-                    doc.add(graph2);
+                    Image graph = new Image(ImageDataFactory.create(graphDest));
+                    doc.add(graph);
                 }
 
                 doc.close();
             }
         }
+        openFile(file);
     }
 
     public static String getCompName(CompanyInfo userInfo) {
@@ -525,6 +522,25 @@ public class PDFconverter {
                 year = calendar.get(Calendar.YEAR);
 
         return LocalDate.of(year, month, day);
+    }
+
+    private static void openFile(File file) {
+        try {
+            if (file.exists()) {
+                if (Desktop.isDesktopSupported()) {
+                    Desktop.getDesktop().open(file);
+                }
+                else {
+                    System.out.println("Awt Desktop not supported.");
+                }
+
+            }
+            else {
+                System.out.println("File does not exists.");
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     private static String createErrorResponse(Exception e) {

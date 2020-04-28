@@ -1,12 +1,9 @@
 package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
-import com.intuit.developer.tutorials.helper.PDFconverter;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;
 import com.intuit.developer.tutorials.helper.recordsHelper;
 import com.intuit.developer.tutorials.objects.Report;
-import com.intuit.ipp.data.CompanyInfo;
-import com.intuit.ipp.services.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,7 +20,7 @@ import java.util.Vector;
 
 @Controller
 @RequestMapping("/getListofReports")
-public class GetReportListController {
+public class reportListController {
     @Autowired
     OAuth2PlatformClientFactory factory;
     @Autowired
@@ -37,20 +34,21 @@ public class GetReportListController {
         String realmID = oauthController.realmIdHolder;
         String accessToken = oauthController.accessTokenHolder;
 
-        PDFconverter rep;
-        try {
-            DataService service = helper.getDataService(realmID, accessToken);
-            CompanyInfo companyInfo = recordH.getUserInfo(service);
 
-            rep = new PDFconverter();
-            rep.generatePDF(service, companyInfo);
+        try {
+            Report report = new Report();
+            List<String> reportNames = report.getNames();
+            List<String> reportDates = report.getDates();
+            List<String> reportNumber = report.getNumbers();
+            List<String> reportGraph = report.getGraphs();
 
             List<Report> reportList = new Vector<>();
-            Report report = new Report();
-            reportList.add(report);
-            reportList.add(report);
-            reportList.add(report);
 
+            for(int i = 0; i < reportNames.size(); i++) {
+                Report reportInfo = new Report();
+                reportInfo.setDesc(reportNumber.get(i),reportNames.get(i), reportDates.get(i), reportGraph.get(i));
+                reportList.add(reportInfo);
+            }
             return reportList;
 
         } catch (Exception e) {
