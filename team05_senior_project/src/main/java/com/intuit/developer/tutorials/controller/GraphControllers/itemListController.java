@@ -54,7 +54,8 @@ public class itemListController {
 
         for(String s : itemNames){
             s = s.replaceAll("_", " ");
-            newLabels.add(s);
+            if(!s.equals("Services"))
+                newLabels.add(s);
         }
 
         return newLabels;

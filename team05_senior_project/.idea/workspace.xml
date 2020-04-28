@@ -2,17 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da912e9-aff3-400e-9305-f4b84f164182" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphOneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphTwoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/graphGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/DashGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GetReportListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/DownloadReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/homeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/invoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Report.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/GetReportListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/reportListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Report.java" afterDir="false" />
+=======
+>>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -41,6 +101,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1aI5auVaAS1qt8ufNMTpfPQTDR1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,11 +119,19 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager">
@@ -92,9 +163,17 @@
       <workItem from="1587252512211" duration="184000" />
       <workItem from="1587252811275" duration="77000" />
       <workItem from="1587663967846" duration="1546000" />
+<<<<<<< HEAD
+      <workItem from="1587698850438" duration="10849000" />
+      <workItem from="1587748056428" duration="2667000" />
+      <workItem from="1587784898183" duration="1469000" />
+      <workItem from="1587949488684" duration="4058000" />
+      <workItem from="1588022260749" duration="5426000" />
+=======
       <workItem from="1587666826286" duration="872000" />
       <workItem from="1588010495529" duration="187000" />
       <workItem from="1588011319425" duration="679000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
@@ -110,6 +189,70 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1030@0.0.1920.1030" timestamp="1586495150432" />
+<<<<<<< HEAD
+    <state width="1852" height="229" key="GridCell.Tab.0.bottom" timestamp="1588095644048">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644048" />
+    <state width="1852" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485880" />
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1852" height="229" key="GridCell.Tab.0.center" timestamp="1588095644047">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.0.center/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644047" />
+    <state width="1852" height="229" key="GridCell.Tab.0.center/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485879" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
+    <state width="1852" height="229" key="GridCell.Tab.0.left" timestamp="1588095644047">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.0.left/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644047" />
+    <state width="1852" height="229" key="GridCell.Tab.0.left/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485879" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
+    <state width="1852" height="229" key="GridCell.Tab.0.right" timestamp="1588095644048">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.0.right/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644048" />
+    <state width="1852" height="229" key="GridCell.Tab.0.right/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485879" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
+    <state width="1852" height="229" key="GridCell.Tab.1.bottom" timestamp="1588095644050">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.1.bottom/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644050" />
+    <state width="1852" height="229" key="GridCell.Tab.1.bottom/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485880" />
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1852" height="229" key="GridCell.Tab.1.center" timestamp="1588095644049">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.1.center/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644049" />
+    <state width="1852" height="229" key="GridCell.Tab.1.center/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485880" />
+    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1852" height="229" key="GridCell.Tab.1.left" timestamp="1588095644048">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.1.left/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644048" />
+    <state width="1852" height="229" key="GridCell.Tab.1.left/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485880" />
+    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1852" height="229" key="GridCell.Tab.1.right" timestamp="1588095644050">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="229" key="GridCell.Tab.1.right/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588095644050" />
+    <state width="1852" height="229" key="GridCell.Tab.1.right/0.0.1920.1020@0.0.1920.1020" timestamp="1587955485880" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1852" height="302" key="GridCell.Tab.2.bottom" timestamp="1588093777539">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="302" key="GridCell.Tab.2.bottom/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588093777539" />
+    <state width="1852" height="302" key="GridCell.Tab.2.center" timestamp="1588093777539">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="302" key="GridCell.Tab.2.center/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588093777539" />
+    <state width="1852" height="302" key="GridCell.Tab.2.left" timestamp="1588093777539">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1852" height="302" key="GridCell.Tab.2.left/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588093777539" />
+    <state width="1852" height="302" key="GridCell.Tab.2.right" timestamp="1588093777539">
+      <screen x="0" y="0" width="1920" height="1020" />
+=======
     <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1588013082727">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -144,11 +287,37 @@
     <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588013082728" />
     <state x="311" y="0" key="SettingsEditor" timestamp="1586493636193">
       <screen x="0" y="0" width="1920" height="1030" />
+>>>>>>> master
     </state>
+    <state width="1852" height="302" key="GridCell.Tab.2.right/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588093777539" />
+    <state x="311" y="0" key="SettingsEditor" timestamp="1587698873731">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="311" y="0" key="SettingsEditor/0.0.1920.1020@0.0.1920.1020" timestamp="1587698873731" />
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1586493636193" />
+    <state x="63" y="112" width="1874" height="702" key="dock-window-1" timestamp="1587748074637">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="1983" y="112" width="1874" height="702" key="dock-window-1/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1587710399346" />
+    <state x="63" y="112" width="1874" height="702" key="dock-window-1/0.0.1920.1020@0.0.1920.1020" timestamp="1587748074637" />
+    <state x="1988" y="0" width="1874" height="629" maximized="true" key="dock-window-2" timestamp="1587748074638">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="1988" y="0" width="1874" height="629" maximized="true" key="dock-window-2/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1587709106497" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586488633749">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1586488633749" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

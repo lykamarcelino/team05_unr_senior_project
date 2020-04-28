@@ -1,7 +1,12 @@
 package com.intuit.developer.tutorials.controller.ReportControllers;
 
 import com.intuit.developer.tutorials.controller.oauthController;
+import com.intuit.developer.tutorials.helper.PDFconverter;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;
+import com.intuit.developer.tutorials.helper.graphGenerator;
+import com.intuit.developer.tutorials.helper.recordsHelper;
+import com.intuit.ipp.data.CompanyInfo;
+import com.intuit.ipp.services.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,9 +19,13 @@ import java.util.List;
 @Controller
 @RequestMapping("/getMakeReport")
 public class makeReportController {
+    //String title;
 
     @Autowired
     public QBOServiceHelper helper;
+
+    @Autowired
+    recordsHelper recordH;
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody
@@ -27,44 +36,21 @@ public class makeReportController {
                       @RequestHeader("yAxisLabel") String yAxis, @RequestHeader("transactionData") Boolean transactionData,
                       @RequestHeader("customerInfo") Boolean customerInfo, @RequestHeader("inventoryInfo") Boolean inventoryInf,
                       @RequestHeader("graph") Boolean graph, @RequestHeader("gridlines") Boolean gridlines){
-        String realmId = oauthController.realmIdHolder;
+
+        String realmID = oauthController.realmIdHolder;
         String accessToken = oauthController.accessTokenHolder;
 
+        //title = graphName;
+
         try{
-            System.out.println("graphName:" + graphName); //the graph name specified by the customer
-            System.out.println("predictionType: " + predictionType); //will tell you waht kind of prediction it is 1)Sales 2)items 3)customers
-            System.out.println("item or Customer id: " + id);   //id will be undefined if it comes from general sales if it is from
-            //customers or items then it will be specific to one customer or item the customer or item label may also be fixed
-            //what i mean by that is that the string does not have any special characters like ' or " or ? it they caused bugs so i removed them
-            System.out.println("graphType: " + graphType); //pie, line, bar, or scatterplot
+            DataService service = helper.getDataService(realmID, accessToken);
+            CompanyInfo companyInfo = recordH.getUserInfo(service);
 
-            //the date labels match to the data labels they are the plot points
-            System.out.println("dates: ");
-            for(String s: dates){
-                System.out.println(s);
-            }
+            PDFconverter rep = new PDFconverter();
+            graphGenerator newGraph = new graphGenerator();
 
-            System.out.println("datalabel: " + dataLabel);
-            System.out.println("data: ");
-            for(String s: data){
-                System.out.println(s);
-            }
-
-            //so these are the point colors but they cannot be directly converted to a string like the others because of it commas but im pretty sure you
-            //dont need this anyway :)
-            System.out.println("colors: ");
-
-            //you should know
-            System.out.println("xAxis: " + xAxis);
-            System.out.println("yAxis: " + yAxis);
-
-            //the flags you wanted:
-            System.out.println("transactionData: " + transactionData);
-            System.out.println("Customer info: " + customerInfo);
-            System.out.println("inventory info: " + inventoryInf);
-            System.out.println("graph: " + graph);
-            System.out.println("gridlines: " + gridlines);
-
+            newGraph.generateGraph(graphType, graphName, xAxis, yAxis, dates, data, dataLabel);
+            rep.generatePDF(service, companyInfo, graphName, customerInfo, gridlines, transactionData, inventoryInf, graph);
 
             return "{'response': \"Report Made\"}";
         }
