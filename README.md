@@ -105,3 +105,10 @@ The project notes will be updated as changes are made to the project.
 - Combine reports, graphs, and other changes from (4/18 Commit, changes were not saved in README)
 - Addition of notification and settings classes and controllers
 - Work in Progress: Any final changes
+
+**Date:** 04/28/2020
+* **Note:**
+- Add report controllers
+- Fix user dashboard graph controllers
+- Work in Progress: Any final changes
+
