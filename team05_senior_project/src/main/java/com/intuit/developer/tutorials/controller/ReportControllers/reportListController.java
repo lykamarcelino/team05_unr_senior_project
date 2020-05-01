@@ -1,6 +1,13 @@
-package com.intuit.developer.tutorials.controller;
+/**
+ * Name: reportListController.java
+ * Description:  Will retrieve the user saved reports and return the list to the UI
+ * Date: 04/29/2020
+ * Author: Chantelle Marquez Suarez
+ * */
+package com.intuit.developer.tutorials.controller.ReportControllers;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
+import com.intuit.developer.tutorials.controller.oauthController;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;
 import com.intuit.developer.tutorials.helper.recordsHelper;
 import com.intuit.developer.tutorials.objects.Report;

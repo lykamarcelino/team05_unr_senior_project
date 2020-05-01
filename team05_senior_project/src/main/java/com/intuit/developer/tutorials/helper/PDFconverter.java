@@ -1,3 +1,10 @@
+/**
+ * Name: PDFconverter.java
+ * Description:  Makes PDF Reports according to user form input. forms are saved in the downloads
+ * folder (CWAC Reports)
+ * Date: 04/29/2020
+ * Author: Chantelle Marquez Suarez
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import com.fasterxml.jackson.core.JsonProcessingException;

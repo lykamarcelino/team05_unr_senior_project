@@ -1,3 +1,10 @@
+/**
+ * Name: modelHelper.java
+ * Description:  Will process ARFF files / User Data to create forecasting models and make a list of
+ * predictions along with their correlating dates.
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import org.springframework.beans.factory.annotation.Autowired;

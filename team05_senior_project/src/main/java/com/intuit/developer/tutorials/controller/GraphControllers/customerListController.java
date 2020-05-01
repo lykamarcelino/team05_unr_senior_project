@@ -1,8 +1,9 @@
 /**
- * Name: customerListController
+ * Name: customerListController.java
+ * Description: Controller that returns a list of the user's active customers
+ * Date: 04/29/2020
  * Author: Liliana Pacheco
- * Description: manages customer fetch request and returns a json list of customers
- */
+ * */
 
 package com.intuit.developer.tutorials.controller.GraphControllers;
 

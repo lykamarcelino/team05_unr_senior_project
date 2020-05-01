@@ -1,3 +1,9 @@
+/**
+ * Name: graphGenerator.java
+ * Description:  Will generate a Graph PNG
+ * Date: 04/29/2020
+ * Author: Chantelle Marquez Suarez
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import org.jfree.chart.ChartFactory;
