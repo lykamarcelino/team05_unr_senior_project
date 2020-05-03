@@ -112,3 +112,7 @@ The project notes will be updated as changes are made to the project.
 - Fix user dashboard graph controllers
 - Work in Progress: Any final changes
 
+**Date:** 05/02/2020
+* **Note:**
+- Finalize documentation and comments in files
+
