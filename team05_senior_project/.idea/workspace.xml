@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da912e9-aff3-400e-9305-f4b84f164182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/0969_Ocean_View_Road_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/0969_Ocean_View_Road_deleted.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/55_Twin_Lane_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/55_Twin_Lane_deleted.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Amys_Bird_Sanctuary.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Amys_Bird_Sanctuary.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Cool_Cars.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Cool_Cars.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Diego_Rodriguez.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Diego_Rodriguez.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dukes_Basketball_Camp_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dukes_Basketball_Camp_deleted.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dylan_Sollfrank.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dylan_Sollfrank.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Freeman_Sporting_Goods.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Freeman_Sporting_Goods.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Geeta_Kalapatapu.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Geeta_Kalapatapu.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Gevelber_Photography.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Gevelber_Photography.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/John_Melton.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/John_Melton.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kate_Whelan.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kate_Whelan.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kookies_by_Kathy.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kookies_by_Kathy.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Mark_Cho.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Mark_Cho.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Paulsen_Medical_Supplies.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Paulsen_Medical_Supplies.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Pyes_Cakes.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Pyes_Cakes.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Red_Rock_Diner.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Red_Rock_Diner.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Sushi_by_Katsuyuki.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Sushi_by_Katsuyuki.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Travis_Waldron.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Travis_Waldron.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Video_Games_by_Dan.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Video_Games_by_Dan.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Wedding_Planning_by_Whitney.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Wedding_Planning_by_Whitney.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Frames/General_Sales.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/General_Sales.arff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
@@ -53,26 +74,27 @@
       <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/graphOne.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graphOne.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphTwo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graphTwo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphOneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphOneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphTwoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/DashControllers/GraphTwoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/CallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/CallbackController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/DownloadReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/DownloadReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/reportListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/ReportControllers/reportListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/editGraphController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/estimatesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/estimatesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/helpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/helpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/PDFconverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/QBOServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/QBOServiceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/dataFrameHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/graphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/graphGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/modelHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/recordsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/recordsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/tableOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/helper/tableOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/DashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/DashGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/invoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/invoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/logoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/notificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/notificationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/oauthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/oauthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/settingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/EstimatesClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/EstimatesClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InventoryClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InvoiceClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/InvoiceClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Notifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Callout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Sample.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +204,10 @@
       <workItem from="1588269269141" duration="179000" />
       <workItem from="1588269458415" duration="1797000" />
       <workItem from="1588285426813" duration="6317000" />
+      <workItem from="1588460113880" duration="59000" />
+      <workItem from="1588462226798" duration="2023000" />
+      <workItem from="1588465278439" duration="3167000" />
+      <workItem from="1588469963117" duration="685000" />
     </task>
     <servers />
   </component>
@@ -197,54 +223,54 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1030@0.0.1920.1030" timestamp="1586495150432" />
-    <state width="1852" height="229" key="GridCell.Tab.0.bottom" timestamp="1588269654976">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1588471331633">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997693" />
     <state width="1852" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654976" />
-    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1852" height="229" key="GridCell.Tab.0.center" timestamp="1588269654976">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331633" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1588471331632">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.0.center/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997693" />
     <state width="1852" height="229" key="GridCell.Tab.0.center/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654976" />
-    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1852" height="229" key="GridCell.Tab.0.left" timestamp="1588269654976">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331632" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1588471331632">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.0.left/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997693" />
     <state width="1852" height="229" key="GridCell.Tab.0.left/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654976" />
-    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1852" height="229" key="GridCell.Tab.0.right" timestamp="1588269654976">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331632" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1588471331633">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.0.right/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997693" />
     <state width="1852" height="229" key="GridCell.Tab.0.right/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654976" />
-    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949397" />
-    <state width="1852" height="229" key="GridCell.Tab.1.bottom" timestamp="1588269654984">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331633" />
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom" timestamp="1588471331634">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.1.bottom/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997694" />
     <state width="1852" height="229" key="GridCell.Tab.1.bottom/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654984" />
-    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1852" height="229" key="GridCell.Tab.1.center" timestamp="1588269654984">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331634" />
+    <state width="1864" height="257" key="GridCell.Tab.1.center" timestamp="1588471331633">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.1.center/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997694" />
     <state width="1852" height="229" key="GridCell.Tab.1.center/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654984" />
-    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1852" height="229" key="GridCell.Tab.1.left" timestamp="1588269654984">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331633" />
+    <state width="1864" height="257" key="GridCell.Tab.1.left" timestamp="1588471331633">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.1.left/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997694" />
     <state width="1852" height="229" key="GridCell.Tab.1.left/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654984" />
-    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
-    <state width="1852" height="229" key="GridCell.Tab.1.right" timestamp="1588269654984">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state width="1864" height="257" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331633" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right" timestamp="1588471331633">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1852" height="229" key="GridCell.Tab.1.right/0.0.1920.1020/1920.0.1920.1020@0.0.1920.1020" timestamp="1588206997694" />
     <state width="1852" height="229" key="GridCell.Tab.1.right/0.0.1920.1020@0.0.1920.1020" timestamp="1588269654984" />
-    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1587664949398" />
+    <state width="1864" height="257" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588471331633" />
     <state width="1852" height="302" key="GridCell.Tab.2.bottom" timestamp="1588096620527">
       <screen x="0" y="0" width="1920" height="1020" />
     </state>
