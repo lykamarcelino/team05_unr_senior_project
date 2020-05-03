@@ -1,3 +1,9 @@
+/**
+ * Name: DashGraph.java
+ * Description: Dashboard graph object
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.objects;
 
 import java.util.List;

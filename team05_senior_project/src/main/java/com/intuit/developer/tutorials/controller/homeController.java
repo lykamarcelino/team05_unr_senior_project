@@ -26,7 +26,6 @@ public class homeController {
 	public @ResponseBody
 	String homeDisplay() {
 
-
 		return  "Empty";
 	}
     

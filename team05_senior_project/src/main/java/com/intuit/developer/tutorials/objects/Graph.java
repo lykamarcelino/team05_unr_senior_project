@@ -1,3 +1,9 @@
+/**
+ * Name: Graph.java
+ * Description:  Basic graph Object
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.objects;
 
 import java.util.List;

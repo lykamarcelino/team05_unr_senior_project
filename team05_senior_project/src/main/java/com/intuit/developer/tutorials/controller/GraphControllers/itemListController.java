@@ -1,3 +1,9 @@
+/**
+ * Name: itemListController.java
+ * Description: Controller that returns a list of the user's active inventory item.
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.controller.GraphControllers;
 
 import com.intuit.developer.tutorials.controller.oauthController;

@@ -1,3 +1,11 @@
+/**
+ * Name: dataFrameHelper.java
+ * Description:  Collects user transaction data and creates table saw dataframe. takes care of
+ * sending tables for correct processes and generating correct ARFF files so that they can be
+ * processed with WEKA sales Forecaster.
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import com.intuit.ipp.data.*;

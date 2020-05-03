@@ -1,9 +1,11 @@
 /**
- * Name: newGraphController
+ * Name: newGraphController.java
+ * Description: will receive a request to generate new graph predictions. Creates the appropriate
+ * model type {general sales, item quantity sales, customer purchases} and makes petitioned predictions
+ * and returns the right graph object for display.
+ * Date: 04/29/2020
  * Author: Liliana Pacheco
- * Description: controller that creates predictions for a user request and returns appropriate graph object
- */
-
+ * */
 package com.intuit.developer.tutorials.controller.GraphControllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;

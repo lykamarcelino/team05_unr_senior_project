@@ -1,3 +1,10 @@
+/**
+ * Name: recordsHelper.java
+ * Description:  query petitions to the quickbooks API and returns the correct list of
+ * objects/data. provides scalable and non scalable queries for petitions over 1000 records.
+ * Date: 04/29/2020
+ * Author: Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import com.intuit.ipp.data.*;

@@ -1,3 +1,10 @@
+/**
+ * Name: makeReportController.java
+ * Description:  will receive user form input and graph data to create appropriate report and
+ * Graph PNG
+ * Date: 04/29/2020
+ * Author: Chantelle Marquez Suarez
+ * */
 package com.intuit.developer.tutorials.controller.ReportControllers;
 
 import com.intuit.developer.tutorials.controller.oauthController;
@@ -40,7 +47,6 @@ public class makeReportController {
         String realmID = oauthController.realmIdHolder;
         String accessToken = oauthController.accessTokenHolder;
 
-        //title = graphName;
 
         try{
             DataService service = helper.getDataService(realmID, accessToken);

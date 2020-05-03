@@ -1,3 +1,10 @@
+/**
+ * Name: tableOperations.java
+ * Description: takes care of pre-processing machine learning dataframes. Has generic operations such
+ * as outlier removal and noise reduction.
+ * Date: 04/29/2020
+ * Author: Chantelle Marquez Suarez and Liliana Pacheco
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import org.springframework.stereotype.Service;

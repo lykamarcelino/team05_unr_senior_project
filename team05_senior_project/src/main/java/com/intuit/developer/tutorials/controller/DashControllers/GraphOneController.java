@@ -1,3 +1,10 @@
+/**
+* Name: GraphOneController.java
+* Description: Controller that fetches the GraphOne file and sends a json response with
+* the most recent graph created data.
+* Date: 04/29/2020
+* Author: Liliana Pacheco
+* */
 package com.intuit.developer.tutorials.controller.DashControllers;
 
 import org.springframework.stereotype.Controller;

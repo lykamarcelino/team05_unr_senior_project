@@ -1,3 +1,9 @@
+/**
+ * Name: QBOServiceHelper.java
+ * Description:  This is provided by intuit tutorials
+ * Date: 04/29/2020
+ * Author: intuit tutorials
+ * */
 package com.intuit.developer.tutorials.helper;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
