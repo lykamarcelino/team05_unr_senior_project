@@ -1,7 +1,11 @@
-/*
-* New controller to handle the auth code, state, and realmId from the React app
-* Create the /oauth endpoint for
-*/
+/**
+ * Name: oauthController.java
+ * Controller to handle the auth code, state, and realmId from the React app
+ * Creates the /oauth endpoint
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
 package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;

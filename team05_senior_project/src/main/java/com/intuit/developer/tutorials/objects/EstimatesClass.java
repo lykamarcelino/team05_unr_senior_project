@@ -1,3 +1,11 @@
+/**
+ * Name: EstimatesClass.java
+ * Class to hold the estimate information
+ * Used for easy return as a JSON Object
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
 package com.intuit.developer.tutorials.objects;
 
 import java.math.BigDecimal;

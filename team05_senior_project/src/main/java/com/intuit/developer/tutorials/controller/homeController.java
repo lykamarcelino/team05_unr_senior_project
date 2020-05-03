@@ -1,3 +1,9 @@
+/**
+ * Name: homeController.java
+ * Description: Setup to link Home page with the backend
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
 package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;

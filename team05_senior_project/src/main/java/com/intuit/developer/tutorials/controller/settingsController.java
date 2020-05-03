@@ -1,3 +1,10 @@
+/**
+ * Name: settingsController.java
+ * Controller to handle changes to the user settings
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
 package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;

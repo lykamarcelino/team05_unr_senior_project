@@ -1,3 +1,10 @@
+/**
+ * Name: loginController.java
+ * Description: Used to create the tokens and connect to the React app
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
 package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;

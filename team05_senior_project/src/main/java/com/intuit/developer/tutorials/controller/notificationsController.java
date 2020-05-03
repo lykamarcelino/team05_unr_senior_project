@@ -1,7 +1,9 @@
-/*
- * Reformatted controller to return the notification information
- * 04/04/2020 Returns JSON object
- */
+/**
+ * Name: notificationsController.java
+ * Description: Used to display the notifications for the User Dashboard
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
 
 package com.intuit.developer.tutorials.controller;
 

@@ -2,78 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da912e9-aff3-400e-9305-f4b84f164182" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/0969_Ocean_View_Road_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/0969_Ocean_View_Road_deleted.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/55_Twin_Lane_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/55_Twin_Lane_deleted.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Amys_Bird_Sanctuary.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Amys_Bird_Sanctuary.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Cool_Cars.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Cool_Cars.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Diego_Rodriguez.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Diego_Rodriguez.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dukes_Basketball_Camp_deleted.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dukes_Basketball_Camp_deleted.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dylan_Sollfrank.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Dylan_Sollfrank.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Freeman_Sporting_Goods.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Freeman_Sporting_Goods.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Geeta_Kalapatapu.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Geeta_Kalapatapu.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Gevelber_Photography.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Gevelber_Photography.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/John_Melton.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/John_Melton.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kate_Whelan.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kate_Whelan.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kookies_by_Kathy.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Kookies_by_Kathy.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Mark_Cho.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Mark_Cho.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Paulsen_Medical_Supplies.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Paulsen_Medical_Supplies.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Pyes_Cakes.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Pyes_Cakes.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Red_Rock_Diner.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Red_Rock_Diner.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Sushi_by_Katsuyuki.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Sushi_by_Katsuyuki.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Travis_Waldron.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Travis_Waldron.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Video_Games_by_Dan.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Video_Games_by_Dan.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Wedding_Planning_by_Whitney.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/All_Customer_Sales/Wedding_Planning_by_Whitney.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Frames/General_Sales.arff" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Frames/General_Sales.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/client/OAuth2PlatformClientFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/CallbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/DashControllers/GraphOneController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/DashControllers/GraphTwoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/customerListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/itemListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/InventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/DownloadReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/ReportControllers/makeReportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/editGraphController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/estimatesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/helpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/homeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/invoiceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/notificationsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/oauthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/reportListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/settingsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/controller/userController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/PDFconverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/QBOServiceHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/dataFrameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/graphGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/modelHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/recordsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/helper/tableOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/DashGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/EstimatesClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InventoryClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/InvoiceClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Notifications.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Report.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/intuit/developer/tutorials/objects/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphOne.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graphOne.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphTwo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graphTwo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/CallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/CallbackController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/GraphControllers/newGraphController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/controller/InventoryController.java" afterDir="false" />
@@ -93,8 +22,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Notifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intuit/developer/tutorials/objects/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Callout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Sample.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +135,8 @@
       <workItem from="1588462226798" duration="2023000" />
       <workItem from="1588465278439" duration="3167000" />
       <workItem from="1588469963117" duration="685000" />
+      <workItem from="1588472222590" duration="23000" />
+      <workItem from="1588472258293" duration="19000" />
     </task>
     <servers />
   </component>

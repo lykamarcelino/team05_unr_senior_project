@@ -1,3 +1,12 @@
+/**
+ * Name: inventoryController.java
+ * Description: Used to return the inventory information in JSON
+ *  Uses InventoryClass
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
+
 package com.intuit.developer.tutorials.controller;
 
 import java.math.BigDecimal;

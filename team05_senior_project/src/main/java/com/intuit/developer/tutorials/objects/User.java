@@ -1,6 +1,10 @@
-/*
-* Java class to format the User information
-*/
+/**
+ * Name: User.java
+ * Class to hold the User information
+ * Used for easy return as a JSON Object
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
 
 package com.intuit.developer.tutorials.objects;
 

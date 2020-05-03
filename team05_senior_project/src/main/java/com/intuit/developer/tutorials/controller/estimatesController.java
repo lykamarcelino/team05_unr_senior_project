@@ -1,9 +1,14 @@
+/**
+ * Name: estimatesController.java
+ * Description: Used to return the estimates information in JSON
+ *  Uses EstimatesClass
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
+
 package com.intuit.developer.tutorials.controller;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;

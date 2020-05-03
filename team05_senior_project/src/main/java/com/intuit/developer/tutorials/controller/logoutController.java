@@ -1,6 +1,11 @@
-/*
-* This will be used to have the user logout and revoke the client token
-* */
+/**
+ * Name: logoutController.java
+ * Description: Used to revoke the tokens and close the session
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ *
+ **/
+
 package com.intuit.developer.tutorials.controller;
 
 import org.jfree.data.json.impl.JSONObject;

@@ -19,7 +19,6 @@ import com.intuit.developer.tutorials.helper.recordsHelper;
 import com.intuit.developer.tutorials.objects.DashGraph;
 import com.intuit.developer.tutorials.objects.Graph;
 import com.intuit.ipp.services.DataService;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

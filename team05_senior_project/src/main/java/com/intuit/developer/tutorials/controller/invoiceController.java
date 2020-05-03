@@ -1,5 +1,12 @@
-package com.intuit.developer.tutorials.controller;
+/**
+ * Name: invoiceController.java
+ * Description: Used to return the invoice information in JSON
+ *  Uses InvoiceClass
+ * Date: 05/02/2020
+ * Author: Lyka Marcelino
+ * */
 
+package com.intuit.developer.tutorials.controller;
 
 import com.intuit.developer.tutorials.client.OAuth2PlatformClientFactory;
 import com.intuit.developer.tutorials.helper.QBOServiceHelper;

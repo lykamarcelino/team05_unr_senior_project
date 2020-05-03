@@ -1,3 +1,10 @@
+/**
+ * Name: CallbackController.java
+ * Description: Used for user authentication and tokens
+ * Date: 05/02/2020
+ * File provided by Intuit API Sample
+ * */
+
 package com.intuit.developer.tutorials.controller;
 
 import javax.servlet.http.HttpSession;
